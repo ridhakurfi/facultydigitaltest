@@ -1,0 +1,111 @@
+.destination {
+  background: #ece8de;
+  padding: 90px 50px;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 70px;
+  align-items: start;
+}
+
+.destination-left h2 {
+  font-size: 56px;
+  line-height: 1.05;
+  color: #2b2626;
+  margin-bottom: 25px;
+}
+
+.destination-left p {
+  max-width: 520px;
+  line-height: 1.6;
+  color: #4d453d;
+  margin-bottom: 40px;
+}
+
+.destination-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.place-btn {
+  height: 72px;
+  border: none;
+  border-bottom: 1px solid #d5cdbf;
+  background: transparent;
+  text-align: left;
+  padding: 0 24px;
+  font-size: 34px;
+  color: #2b2626;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-btn.active {
+  background: #b08a2f;
+  color: white;
+}
+
+.destination-right img {
+  width: 100%;
+  height: 760px;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+
+  .destination-card {
+    position: relative;
+  }
+
+  .destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  /* THIS IS THE IMPORTANT PART */
+  .destination-card h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  /* optional dark overlay for readability */
+  .destination-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+  }
+}
+@media (max-width: 900px) {
+  .destination {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 70px 30px;
+  }
+
+  .destination-left h2 {
+    font-size: 42px;
+  }
+
+  .destination-right img {
+    height: 500px;
+  }
+
+  .place-btn {
+    font-size: 24px;
+    height: 60px;
+  }
+
+  .destination-list {
+    flex-direction: column;
+  }
+}

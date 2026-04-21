@@ -1,0 +1,58 @@
+.category-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.strip-card {
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.strip-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
+}
+
+.strip-card h3 {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  color: white;
+  font-size: 30px;
+  z-index: 2;
+}
+
+.strip-card:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease;
+}
+@media (max-width: 900px) {
+  .category-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .strip-card h3 {
+    font-size: 24px;
+    left: 20px;
+    bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .category-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .strip-card {
+    height: 80px;
+  }
+
+  .strip-card h3 {
+    font-size: 22px;
+    left: 16px;
+    bottom: 16px;
+  }
+}

@@ -1,0 +1,95 @@
+.navbar {
+  height: 70px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-btn {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.btn-outline,
+.btn-fill {
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid #333;
+  background: white;
+}
+
+.btn-fill {
+  border: none;
+  background: #3e2e2a;
+  color: white;
+}
+/* Tablets */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-right {
+    gap: 12px;
+  }
+
+  .nav-right a {
+    font-size: 13px;
+  }
+
+  .btn-outline,
+  .btn-fill {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .nav-right {
+    display: none; /* hide full menu for now */
+  }
+
+  .menu-btn {
+    font-size: 26px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+}

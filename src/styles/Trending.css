@@ -1,0 +1,133 @@
+.trending {
+  background: #1e1a1a;
+  color: white;
+  padding: 80px 50px;
+}
+
+.trending-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.small-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.trending-header h2 {
+  font-size: 40px;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.trend-card {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 2;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card-content h3 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-tags span {
+  font-size: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .trending {
+    padding: 60px 30px;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trending-header h2 {
+    font-size: 32px;
+  }
+
+  .trend-card {
+    height: 380px;
+  }
+
+  .card-content h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .trending {
+    padding: 50px 20px;
+  }
+
+  .trending-header h2 {
+    font-size: 26px;
+  }
+
+  /* KEY CHANGE */
+  .trending-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+
+  /* hide scrollbar (optional clean UI) */
+  .trending-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .trending-grid {
+    scrollbar-width: none;
+  }
+
+  .trend-card {
+    flex: 0 0 85%;
+    height: 300px;
+    scroll-snap-align: start;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+}
