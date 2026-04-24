@@ -75,14 +75,13 @@
     font-size: 13px;
   }
 }
-/* Mobile */
 @media (max-width: 600px) {
   .navbar {
     padding: 0 16px;
   }
 
   .nav-right {
-    display: none; /* hide full menu for now */
+    display: none;
   }
 
   .menu-btn {
