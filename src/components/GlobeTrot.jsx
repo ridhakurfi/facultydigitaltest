@@ -12,7 +12,7 @@ function GlobeTrot() {
         <ul className="globe-menu">
           <li>All</li>
           <li>Road Trips</li>
-          <li>Sustainable Travel</li>
+          <li>Sustainable Traveling</li>
           <li className="active">Photo Journal</li>
           <li>Romantic</li>
           <li>Family Bonding</li>

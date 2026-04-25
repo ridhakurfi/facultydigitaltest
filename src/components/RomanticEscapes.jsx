@@ -16,7 +16,7 @@ function RomanticEscapes() {
         {
             image: trending2,
             country: 'Mexico',
-            title: 'Best Tulum Beach Escape and Romantic Getaway Ideas',
+            title: 'No. 1 Tulum Beach Escape and Romantic Getaway Ideas',
             tags: ['Beach', 'Couple', 'Travel Guides', 'Luxury', 'Sunset']
         },
         {
