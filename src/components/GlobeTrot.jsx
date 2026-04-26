@@ -18,7 +18,6 @@ function GlobeTrot() {
           <li>Family Bonding</li>
           <li>Jet Setting</li>
         </ul>
-
         <div className="globe-arrows">
           <button>←</button>
           <button>→</button>

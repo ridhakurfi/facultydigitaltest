@@ -48,7 +48,7 @@ function DestinationExplorer() {
         </h2>
 
         <p>
-          Discover your next adventure with our
+          Find your next adventure with our
           handpicked travel inspiration, exciting
           guides, and spotlighted destinations.
         </p>
