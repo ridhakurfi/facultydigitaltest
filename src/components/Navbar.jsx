@@ -12,7 +12,7 @@ function Navbar() {
         <a href="#">Discovery</a>
         <a href="#">Join | Sign In</a>
         <button className="btn-outline">Book Now</button>
-        <button className="btn-fill">Dine With Us</button>
+        <button className="btn-fill">Have Dinner with us</button>
       </div>
     </nav>
   )
