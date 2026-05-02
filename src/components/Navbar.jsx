@@ -11,7 +11,7 @@ function Navbar() {
       <div className="nav-right">
         <a href="#">Discovery</a>
         <a href="#">Join | Sign In</a>
-        <button className="btn-outline">Book Imediately</button>
+        <button className="btn-outline">Book Now</button>
         <button className="btn-fill">Diner is Served</button>
       </div>
     </nav>
