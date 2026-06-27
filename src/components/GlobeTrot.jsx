@@ -7,7 +7,7 @@ function GlobeTrot() {
     <section className="globe-trot">
 
       <div className="globe-left">
-        <h2>Globe-trot with Pan Oceanic</h2>
+        <h2>Globe-trot with Pan Atlantic</h2>
 
         <ul className="globe-menu">
           <li>All</li>
