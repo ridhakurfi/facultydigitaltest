@@ -8,7 +8,7 @@ function CategoryStrip() {
   const items = [
     {
       image: category1,
-      title: 'For Couples'
+      title: 'For Us'
     },
     {
       image: category2,
