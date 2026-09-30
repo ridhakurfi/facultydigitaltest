@@ -38,7 +38,7 @@ function Hero() {
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
-        <p className="hero-tag">Artemis Spotlight</p>
+        <p className="hero-tag">Jets Spotlight</p>
 
         <h1>{slides[currentSlide].title}</h1>
 
