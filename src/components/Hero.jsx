@@ -22,7 +22,7 @@ function Hero() {
       image:
         hero3,
       title: 'Escape to the city',
-      subtitle: 'Axios Collection'
+      subtitle: 'Holy Collection'
     }
   ]
 
